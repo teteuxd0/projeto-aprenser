@@ -1,0 +1,249 @@
+
+:root {
+    --primary-color: #fed001;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 400 62.5% "Inter", sans-serif;
+}
+
+p, a {
+    font-size: 1rem;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 4.6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 110rem;
+    margin: auto;
+}
+
+/* Cabeçalho */
+
+.WrapperContainer-dark {
+    background-color: #252525;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.header img {
+    width: 10rem;
+}
+
+.header_nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.header_nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+/* Banner */
+
+.wrapperContainer-hero {
+    background: linear-gradient(white, yellow);
+}
+
+.heroBanner {
+    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.heroBanner h1 {
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.heroBanner img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #252525;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    font-weight: bold;
+}
+
+/* Cursos */
+
+.wrapperContainer-light {
+    background-color: #f5f5f5;
+}
+
+.Cursos {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.Cursos h2 {
+    margin-bottom: 4rem;
+}
+
+.cursosContainer {
+    display: flex;
+    gap: 2rem;
+    text-align: left;
+}
+
+.curso_card {
+    background-color: white;
+    flex: 1;
+}
+
+.curso_card img {
+    width: 100%;
+}
+
+.cursos_card_content {
+    padding: 2rem;
+}
+
+.cursos_card_content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cursos_card_content p {
+    line-height: 1.5;
+    color: #555;
+}
+
+.section_btn {
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+/* Nossa Escola */
+
+.wrapeercontainer-dark2 {
+    background-color: #003663;
+    color: white;
+}
+
+#escola {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+#escola img {
+    width: 50%;
+}
+
+#escola h2 {
+
+    margin-bottom: 2rem;
+   
+}
+
+#escola p{
+    /* font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.5; */
+}
+
+/* Contatos */
+
+#Contatos {
+    padding: 5rem 0;
+}
+
+#Contatos h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#Contatos address {
+    text-align: right;
+    font-style: normal;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    line-height: 1.7;
+}
+
+/* Rodapé */
+
+.wrappercontainer-dark {
+    background-color: #252525;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+footer a {
+    color: white;
+}
+
+/* Celular */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .heroBanner h1 {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .heroBanner img {
+        opacity: 0.5;
+    }
+
+    .cursosContainer {
+        flex-direction: column;
+    }
+
+    #escola {
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    #escola img {
+        width: 100%;
+    }
+}
